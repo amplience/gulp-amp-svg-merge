@@ -15,7 +15,9 @@
   "keywords": [
     "svg",
     "merge",
-    "metadata"
+    "metadata",
+    "gulpplugin",
+    "amplience"
   ],
   "devDependencies": {
     "babel-cli": "6.10.1",

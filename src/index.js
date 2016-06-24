@@ -16,13 +16,13 @@ const PLUGIN_NAME = 'gulp-amp-svg-merge';
 const errorHandler = {
   errorHandler: {
     warning(warn) {
-      gutil.log('Merge warning: ', warn);
+      gutil.log(`${PLUGIN_NAME}: Merge warning: ${warn}`);
     },
     error(error) {
-      gutil.log('Merge error: ', error);
+      gutil.log(`${PLUGIN_NAME}: Merge error:  ${error}`);
     },
     fatalError(fatal) {
-      gutil.log('Merge fatal error: ', error);
+      gutil.log(`${PLUGIN_NAME}: Merge fatal error:  ${fatal}`);
     }
   }
 };
@@ -33,7 +33,7 @@ function getFile(filename) {
   try {
     metadataFile = fs.readFileSync(filename, 'utf-8');
   } catch (e) {
-    //gutil.log('No merge file found: ', e);
+    //gutil.log(`${PLUGIN_NAME}: No merge file found: ${e}');
   }
 
   return metadataFile;
@@ -46,7 +46,7 @@ function mergeMetadata(file, metadata) {
   let svgElement = svgDom.getElementsByTagName('svg')[0];
 
   if (!svgElement|| !metadataDom || !svgDom) {
-    gutil.log('Error merging metadata. Files are missing data or invalid.');
+    gutil.log(`${PLUGIN_NAME}: Error merging metadata. Files are missing data or invalid.`);
     return '';
   }
 
@@ -67,7 +67,7 @@ function mergeHeaders(file, headers) {
   let headerSvgElement = headersDom ? headersDom.getElementsByTagName('svg')[0] : null;
 
   if (!headersDom || !svgDom || !svgElement) {
-    gutil.log('Error merging headers. Files are missing data or invalid.');
+    gutil.log(`${PLUGIN_NAME}: Error merging headers. Files are missing data or invalid.`);
     return '';
   }
 
