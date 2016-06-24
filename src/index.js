@@ -81,7 +81,7 @@ function mergeHeaders(file, headers) {
 }
 
 // Plugin level function(dealing with files)
-function gulpAmpSvgMerge(opts) {
+function gulpAmpSvgMerge(opts = {}) {
   const options = {
     svgDir: opts.svgDirectory || './svg',
     subsFileExt: opts.subsFileExt || '.metadata',
