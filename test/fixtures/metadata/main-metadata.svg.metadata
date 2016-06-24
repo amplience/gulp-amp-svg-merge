@@ -1,0 +1,8 @@
+<ampsvg:metadata>
+    <ampsvg:substitutions>
+        <ampsvg:substitute type="set-innerText" target="//svg:text[@id='text01']" value="10% off" />
+    </ampsvg:substitutions>
+    <ampsvg:fonts>
+        <ampsvg:font font-family="/playground/Roboto" />
+    </ampsvg:fonts>
+</ampsvg:metadata>
