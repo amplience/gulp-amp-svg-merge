@@ -2,7 +2,7 @@
   "name": "gulp-amp-svg-merge",
   "version": "1.0.0",
   "description": "Gulp plugin for merging Amplience SVG metadata into SVG files",
-  "homepage": "",
+  "homepage": "http://amplience.com/",
   "author": {
     "name": "Ben Pearey",
     "email": "bpearey@amplience.com",
@@ -48,7 +48,7 @@
       "mocha": true
     }
   },
-  "repository": "amplience/gulp-amp-svg-merge",
+  "repository": "git@github.com:amplience/gulp-amp-svg-merge.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
