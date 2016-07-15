@@ -79,9 +79,9 @@ A metadata file can be created to merge in Amplience specific metadata. The cont
 Note: `<metadata>` should not be included in this file.
 
 ### Headers
-A header file can be created to merge in svg element attributes.  Th file should contain:
+A header file can be created to merge in svg element attributes.  The file should only contain attributes to be merged e.g.
 ```xml
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:ampsvg="http://media.amplience.com/2016/svg-extensions" width="200px" height="200px" viewBox="0 0 200 200"></svg>
+<svg xmlns:ampsvg="http://media.amplience.com/2016/svg-extensions" width="200px" height="200px" viewBox="0 0 200 200"></svg>
 ```
 
 ## License
